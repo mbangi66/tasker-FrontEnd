@@ -126,6 +126,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "task-manger"
+    }
+  },
+  "defaultProject": "task-manger",
+  "cli": {
+    "analytics": "fc23c431-b8fb-41af-9c18-ef31376b6ab8"
+  }
 }
