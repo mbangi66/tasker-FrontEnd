@@ -1,0 +1,129 @@
+
+@import url("https://fonts.googleapis.com/css?family=Lato|Nunito&display=swap");
+
+$turquoise: #44ddd0;
+$green: #27d7a1;
+$light-green: #45f69e; 
+$dark-green: rgb(0, 100, 80);
+
+$light: #f8f8f8;
+
+
+$family-sans-serif: "Nunito", sans-serif;
+$primary: $green;
+
+$link: $turquoise;
+
+$control-border-width: 2px;
+$input-border-color: transparent;
+$input-shadow: none;
+
+
+
+html {
+    background: linear-gradient(to right top, $turquoise, $green);
+}
+
+html, body {
+    height: 100%;
+}
+
+.centered-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.modal-box {
+    min-height: 200px;
+    width: 100%;
+    max-width: 580px;
+    background: white;
+    border-radius: 5px;
+    padding: 35px;
+}
+
+.title {
+    font-family: 'Lato';
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.white-box {
+    padding: 35px;
+    background: white;
+    border-radius: 5px;
+
+    width: 350px;
+    max-width: 350px;
+    
+}
+
+.field{
+    padding: 25px;
+}
+
+
+@media only screen and(max-width: 740px) {
+    .task-manger-container{
+        width: 50%;
+        height: 100%;
+        padding: 0px;
+        margin: 0px;
+        max-width: 600px;
+        max-height: 600px;
+    }
+    .list-menu{
+        .list-menu-item{
+            width: 120px;
+        }
+    }
+}
+
+@media only screen and(max-width: 500px) {
+    *{
+        padding: 0px;
+        margin: 0px;
+        font-size: 14px;
+        font-weight: 16px;
+    }
+    .task-list-container{
+        padding: 0px;
+        margin: 0px;
+    }
+    .sidebar{
+        display: none;
+        width: 170px;
+        margin:0px;
+        padding: 0px;
+    }
+    .task-manger-container{
+        width: auto;
+        height: 70%;
+        padding: 0px;
+        margin: 0px;
+    }
+    .list-menu{
+        display: none;
+        .list-menu-item{
+            width: 300px;
+            padding: -30px;
+            margin: 0px;
+        }
+    }
+    .task{
+        height: 30%;
+        width: auto;
+    }
+    .circle-add-button{
+        height: 30px;
+        width: 20px;
+    }
+    #newListButton{
+        width: 140px;
+    }
+}
+

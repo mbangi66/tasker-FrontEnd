@@ -1,0 +1,32 @@
+<div class="centered-content">
+    <div class="white-box">
+        <h1 class="title has-text-primary">Login</h1>
+        <div class="field">
+            <p class="control has-icons-left has-icons-right ">
+                <input #email class="input has-background-grey-lighter" type="email" placeholder="Email">
+                    <span class="icon is-small is-left">
+                        <i class="fas fa-envelope"></i>
+                    </span>
+                </p>
+            </div>
+            <div class="field">
+                <p class="control has-icons-left ">
+                    <input #password class="input has-background-grey-lighter" type="password" placeholder="Password">
+                        <span class="icon is-small is-left">
+                            <i class="fas fa-lock"></i>
+                        </span>
+                    </p>
+                </div>
+                <div class="field" style="display: flex;justify-content: flex-end;">
+                    <p class="control">
+                        <!-- <button style="margin-right:15px" class="button is-success has-text-white to-left" [routerLink]="['/sign-up']" routerLinkActive="router-link-active" >
+                            Sign-Up
+                        </button> -->
+                        <button class="button is-success has-text-white to-right" (click)="loginEvent(email.value,password.value)">
+                            Login
+                        </button>
+                    </p>
+                </div>
+            <p>Not got a Account? <a [routerLink]="['/sign-up']" class="signUp" class="login" >Sign up</a> Now!</p>
+            </div>
+        </div>
