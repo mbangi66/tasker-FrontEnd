@@ -128,10 +128,17 @@
     .sidebar{
         width: 170px;
     }
+    .icon{
+        width: 20px;
+        padding: 18px;
+    }
 }
 
 @media only screen and(max-width: 740px) {
     .sidebar{
         width: 200px;
+    }
+    .icon{
+        width: 15px;
     }
 }
