@@ -4,3 +4,33 @@
         color: #133926;
     }
 }
+
+.simple-form {
+    display: flex;
+    padding-bottom: 1.25rem;
+}
+.simple-form input {
+margin: 0 .25rem;
+min-width: 125px;
+border: 1px solid #eee;
+border: 3px solid;
+border-radius: 5px;
+transition: border-color .5s ease-out;
+}
+.simple-form input:optional {
+border-color: #999;
+}
+.simple-form input:required:valid {
+border-color: palegreen;
+}
+.simple-form input:invalid {
+border-color: salmon;
+}
+.simple-form input:required:focus:valid {
+background: url("/images/check.svg") no-repeat 95% 50%;
+background-size: 25px;
+}
+.simple-form input:focus:invalid {
+background: url("/images/tnt.svg") no-repeat 95% 50%;
+background-size: 45px;
+}

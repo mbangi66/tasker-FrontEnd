@@ -1,9 +1,11 @@
 <div class="centered-content">
+    <form [formGroup]="user" class="simple-form">
     <div class="white-box">
         <h1 class="title has-text-primary">Login</h1>
         <div class="field">
             <p class="control has-icons-left has-icons-right ">
-                <input #email class="input has-background-grey-lighter" type="email" placeholder="Email">
+                <input formControlName="email" #email class="input has-background-grey-lighter" type="email" placeholder="Email">
+                <small *ngIf="!email.valid && email.touched" id="emailHelp" class="form-text text-danger">please enter email address</small>
                     <span class="icon is-small is-left">
                         <i class="fas fa-envelope"></i>
                     </span>
@@ -11,7 +13,7 @@
             </div>
             <div class="field">
                 <p class="control has-icons-left ">
-                    <input #password class="input has-background-grey-lighter" type="password" placeholder="Password">
+                    <input #password formControlName="password" class="input has-background-grey-lighter" type="password" placeholder="Password">
                         <span class="icon is-small is-left">
                             <i class="fas fa-lock"></i>
                         </span>
@@ -29,4 +31,5 @@
                 </div>
             <p>Not got a Account? <a [routerLink]="['/sign-up']" class="signUp" class="login" >Sign up</a> Now!</p>
             </div>
+            </form>
         </div>
